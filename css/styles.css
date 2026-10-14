@@ -12,3 +12,17 @@ body {
     background-color: #f4f4f9;
     color: #222;
 }
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+p {
+    margin-bottom: 12px;
+}
