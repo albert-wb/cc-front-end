@@ -1,0 +1,76 @@
+/* Esse arquivo reúne os estilos que podem ser aplicados a um documento HTML */
+/* Seleciona todos os elementos da página e aplica estilos comuns */
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o padding padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura e altura dos elementos */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão da página como Arial, com uma alternativa de sans-serif */
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o padding padrão do body */
+    background-color: #7c83af; /* Define a cor de fundo da página como um tom de azul claro */
+    color: #333; /* Define a cor do texto como um cinza escuro */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: rgb(8, 15, 58); /* Define a cor de fundo do cabeçalho como um azul escuro */
+    color: white; /* Define a cor do texto do cabeçalho como branco */
+    padding: 30px; /* Define o espaço interno do cabeçalho em 30px ao redor do conteúdo */
+    text-align: center; /* Alinha o texto do cabeçalho ao centro */
+    position: relative; /* Define a posição do cabeçalho como relativa, permitindo posicionar elementos filhos com base neste */
+}
+
+header h1, header h2 {
+    margin: 0; /* Remove a margem padrão do título no cabeçalho */
+    font-size: 2.5em; /* Define o tamanho da fonte do título como 2.5 vezes o tamanho da fonte padrão */
+}
+
+header button {
+    position: absolute; /* Posiciona o botão de forma absoluta em relação ao cabeçalho */
+    right: 20px; /* Alinha o botão à direita, com 20px de distância da borda direita do cabeçalho */
+    top: 20px; /* Alinha o botão ao topo, com 20px de distância da borda superior do cabeçalho */
+    background-color: #7c83af; /* Define a cor de fundo do botão como o mesmo azul claro do background da página */
+    color: #ffffff; /* Define a cor do texto do botão como branco */
+    border: none; /* Remove a borda padrão do botão */
+    padding: 10px 20px; /* Define o espaço interno do botão em 10px vertical e 20px horizontal */
+    cursor: pointer; /* Define o cursor como um ponteiro ao passar sobre o botão */
+    font-size: 1em; /* Define o tamanho da fonte do botão como o padrão (1em) */
+    border-radius: 5px; /* Arredonda os cantos do botão com um raio de 5px */
+}
+
+header button:hover {
+    background-color: #e0e0e0; /* Altera a cor de fundo do botão ao passar o mouse para um cinza claro */
+}
+
+/* Estilo principal */
+main {
+    padding: 40px; /* Define o espaço interno do main em 40px ao redor do conteúdo */
+    text-align: center; /* Alinha o texto dentro do main ao centro */
+}
+
+main img {
+    max-width: 150px; /* Define a largura máxima das imagens dentro do main como 150px */
+}
+
+section {
+    margin: 20px 0; /* Define a margem superior e inferior das seções como 20px */
+}
+
+section h2 {
+    font-size: 2em; /* Define o tamanho da fonte dos títulos h2 dentro das seções como 2 vezes o tamanho da fonte padrão */
+    margin-bottom: 10px; /* Define a margem inferior dos títulos h2 como 10px */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: rgb(8, 15, 58); /* Define a cor de fundo do rodapé como um azul escuro, igual ao cabeçalho */
+    color: #ffffff; /* Define a cor do texto do rodapé como branco */
+    padding: 40px; /* Define o espaço interno do rodapé em 40px ao redor do conteúdo */
+    text-align: center; /* Alinha o texto do rodapé ao centro */
+    position: absolute; /* Posiciona o rodapé de forma absoluta em relação ao body */
+    bottom: 0; /* Alinha o rodapé ao fundo da janela de visualização */
+    width: 100%; /* Define a largura do rodapé como 100% da janela de visualização */
+}
