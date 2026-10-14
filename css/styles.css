@@ -44,3 +44,33 @@ a:hover {
 a:active {
     color: #d63031;
 }
+
+/* ===== Navegação ===== */
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Componentes: Lista de vantagens ===== */
+#vantagens ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+#vantagens li {
+    margin-bottom: 8px;
+}
