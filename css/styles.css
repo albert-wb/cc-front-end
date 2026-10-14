@@ -74,3 +74,25 @@ nav a:hover {
 #vantagens li {
     margin-bottom: 8px;
 }
+
+/* ===== Componentes: Tabela de eventos ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
