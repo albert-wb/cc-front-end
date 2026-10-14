@@ -4,3 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ===== Tipografia e fundo global ===== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #222;
+}
