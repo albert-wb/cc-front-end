@@ -5,12 +5,20 @@
     box-sizing: border-box;
 }
 
-/* ===== Tipografia e fundo global ===== */
+/* ===== Tipografia e layout global com Flexbox vertical (Aula 10) ===== */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f9;
     color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* o main cresce para ocupar todo o espaço sobrando, empurrando o footer para baixo */
+    padding: 20px;
 }
 
 h1 {
