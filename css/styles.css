@@ -45,6 +45,32 @@ a:active {
     color: #d63031;
 }
 
+/* Pseudo-classes e Pseudo-elementos (Aula 10) */
+input:focus, textarea:focus {
+    border-color: #2a6bf2;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(42, 107, 242, 0.2);
+}
+
+nav a:not(.ativo) {
+    opacity: 0.9;
+}
+
+label.obrigatorio::after {
+    content: " *";
+    color: #e74c3c;
+}
+
+nav a::after {
+    content: " →";
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+nav a:hover::after {
+    opacity: 1;
+}
+
 /* ===== Layout: Header e Footer ===== */
 header {
     background-color: #2c3e50;
