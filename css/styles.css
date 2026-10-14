@@ -26,3 +26,21 @@ h2 {
 p {
     margin-bottom: 12px;
 }
+
+/* ===== Links ===== */
+a:link {
+    color: #2a6bf2;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #7d3c98;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #d63031;
+}
