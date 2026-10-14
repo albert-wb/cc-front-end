@@ -60,6 +60,41 @@
                     </tr>
                 </tbody>
             </table>
+
+            <div class="midia-video">
+                <h3>Trailer do Evento</h3>
+                <video id="videoEvento" width="480" poster="images/capa-evento.jpg">
+                    <source src="videos/trailer-show-rock.mp4" type="video/mp4">
+                    <source src="videos/trailer-show-rock.webm" type="video/webm">
+                    Seu navegador não suporta a reprodução de vídeo.
+                </video>
+                <br>
+                <button id="btnPlayVideo">▶ Reproduzir trailer</button>
+                <p id="tempoVideo">00:00 / 00:00</p>
+            </div>
+
+            <div class="midia-audio">
+                <h3>Bastidores do Evento</h3>
+                <p>Ouça os bastidores do evento:</p>
+                <audio id="audioEvento">
+                    <source src="audio/podcast-bastidores.mp3" type="audio/mpeg">
+                    <source src="audio/podcast-bastidores.ogg" type="audio/ogg">
+                </audio>
+                <button id="btnPlayAudio">▶ Reproduzir</button>
+                <p id="tempoAudio">00:00 / 00:00</p>
+            </div>
+
+            <div class="midia-mapa">
+                <h3>Localização</h3>
+                <iframe
+                    src="https://maps.google.com/maps?q=Arena+Franca&z=16&output=embed"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    loading="lazy"
+                    title="Localização do evento: Arena Franca">
+                </iframe>
+            </div>
         </section>
 
         <section id="vantagens">
@@ -81,5 +116,7 @@
     <footer>
         <p>&copy; 2026 IngressosFácil - Todos os direitos reservados</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
