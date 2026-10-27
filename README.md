@@ -8,17 +8,17 @@ Este repositório documenta e implementa passo a passo o conteúdo prático das 
 ## 📁 Estrutura de Pastas e Arquivos
 
 ```text
-├── index.html                           # Página principal do IngressosFácil (responsiva e interativa)
-├── cadastro.html                        # Página de formulário de cadastro com validação nativa e DOM
+├── index.html                           # Página principal do IngressosFácil reconstruída com Bootstrap 5
+├── cadastro.html                        # Página de cadastro com formulário e componentes Bootstrap 5
 ├── login.html                           # Página de login com captura de dados e eventos submit
+├── modelo.html                          # Modelo inicial base para páginas com Bootstrap 5
+├── styles.css                           # Folha de estilo personalizada (efeito card-hover)
 ├── css/
 │   ├── style.css                        # Folha de estilo básica inicial
-│   └── styles.css                       # Folha de estilo completa, modular e com Flexbox
+│   └── styles.css                       # Folha de estilo sincronizada com regras customizadas
 ├── js/
 │   └── script.js                        # Controles de mídia (vídeo e áudio) e desenho em Canvas 2D
-├── images/
-│   ├── logo.png                         # Logotipo do site
-│   └── capa-evento.jpg                  # Poster para exibição no reprodutor de vídeo
+├── images/                              # Imagens dos eventos (show, teatro, gastronomia, futebol, etc.)
 ├── exemplos/
 │   ├── aula-03/
 │   │   └── elementos-fundamentais.html  # Formatação, listas, tabelas olímpicas e links
@@ -44,3 +44,4 @@ Este repositório documenta e implementa passo a passo o conteúdo prático das 
 8. **Aula 09** - Recursos Multimídia (Vídeo e Áudio com player customizado, mapa incorporado via `<iframe>`) e Gráficos (Selo VIP em Canvas 2D e gráfico vetorial SVG).
 9. **Aula 10** - Layouts Responsivos com Flexbox, pseudo-classes (`:focus`, `:not`), pseudo-elementos (`::before`, `::after`), cabeçalho flexível, grade dinâmica de cards e rodapé fixado via coluna flex.
 10. **Aula 11** - CSS Grid Layout: estruturação bidimensional com grid-template-areas, vitrine de cards com auto-fit/minmax, controle de trilhas e responsividade.
+11. **Aula 12** - Bootstrap 5: framework de estilos, sistema de 12 colunas, componentes pré-estilizados (navbar responsiva, cards com grid, list-group, forms com input-group) e classes utilitárias.

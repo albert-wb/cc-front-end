@@ -4,150 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IngressosFácil</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo do site">
-            <h1>IngressosFácil</h1>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-ticket-perforated me-2" aria-hidden="true"></i>IngressosFácil
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal" aria-expanded="false" aria-label="Alternar menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house"
+                        aria-hidden="true"></i> Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#eventos"><i class="bi bi-calendar-event"
+                        aria-hidden="true"></i> Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html"><i class="bi bi-person-plus"
+                        aria-hidden="true"></i> Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato"><i class="bi bi-envelope" aria-hidden="true"></i>
+                        Contato</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#vantagens">Vantagens</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+    </nav>
+
+    <header class="bg-body-tertiary border-bottom py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Os melhores eventos de Franca</h1>
+            <p class="lead mb-4">Shows, teatro, esportes e gastronomia. Garanta seu ingresso em poucos cliques.</p>
+            <a href="#eventos" class="btn btn-primary btn-lg me-2">Ver eventos</a>
+            <a href="cadastro.html" class="btn btn-outline-secondary btn-lg">Criar conta</a>
+        </div>
     </header>
 
-    <main>
-        <section id="home">
-            <h2>Bem-vindo ao IngressosFácil</h2>
-            <p>Encontre os melhores eventos da sua cidade com poucos cliques. Consulte a <a href="#eventos">programação completa</a> abaixo.</p>
-        </section>
-
-        <section id="eventos">
-            <h2>Próximos Eventos</h2>
-            <div class="eventos-container">
-                <div class="evento-item">
-                    <h3>Show de Rock</h3>
-                    <p>25/09/2026, Arena Franca</p>
+    <div class="container my-4">
+        <div class="row g-4">
+            <aside class="col-md-3">
+                <h2 class="h5">Categorias</h2>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                        <i class="bi bi-grid me-2" aria-hidden="true"></i>Todas
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="bi bi-music-note-beamed me-2" aria-hidden="true"></i>Shows
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="bi bi-emoji-smile me-2" aria-hidden="true"></i>Comédia
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="bi bi-trophy me-2" aria-hidden="true"></i>Esportes
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="bi bi-cup-hot me-2" aria-hidden="true"></i>Gastronomia
+                    </a>
                 </div>
-                <div class="evento-item">
-                    <h3>Teatro: A Comédia da Vida</h3>
-                    <p>30/09/2026, Teatro Municipal</p>
-                </div>
-                <div class="evento-item">
-                    <h3>Festival Gastronômico</h3>
-                    <p>05/10/2026, Praça Central</p>
-                </div>
-            </div>
+            </aside>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Evento</th>
-                        <th>Data</th>
-                        <th>Local</th>
-                        <th>Preço</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Show de Rock</td>
-                        <td>25/09/2026</td>
-                        <td>Arena Franca</td>
-                        <td>R$ 120,00</td>
-                    </tr>
-                    <tr>
-                        <td>Teatro: A Comédia da Vida</td>
-                        <td>30/09/2026</td>
-                        <td>Teatro Municipal</td>
-                        <td>R$ 60,00</td>
-                    </tr>
-                    <tr>
-                        <td>Festival Gastronômico</td>
-                        <td>05/10/2026</td>
-                        <td>Praça Central</td>
-                        <td>Entrada gratuita</td>
-                    </tr>
-                </tbody>
-            </table>
+            <main class="col-md-9" id="eventos">
+                <h2 class="h4 mb-3">Próximos eventos</h2>
 
-            <div class="midia-video">
-                <h3>Trailer do Evento</h3>
-                <video id="videoEvento" width="480" poster="images/capa-evento.jpg">
-                    <source src="videos/trailer-show-rock.mp4" type="video/mp4">
-                    <source src="videos/trailer-show-rock.webm" type="video/webm">
-                    Seu navegador não suporta a reprodução de vídeo.
-                </video>
-                <br>
-                <button id="btnPlayVideo">▶ Reproduzir trailer</button>
-                <p id="tempoVideo">00:00 / 00:00</p>
-            </div>
-
-            <div class="midia-audio">
-                <h3>Bastidores do Evento</h3>
-                <p>Ouça os bastidores do evento:</p>
-                <audio id="audioEvento">
-                    <source src="audio/podcast-bastidores.mp3" type="audio/mpeg">
-                    <source src="audio/podcast-bastidores.ogg" type="audio/ogg">
-                </audio>
-                <button id="btnPlayAudio">▶ Reproduzir</button>
-                <p id="tempoAudio">00:00 / 00:00</p>
-            </div>
-
-            <div class="midia-mapa">
-                <h3>Localização</h3>
-                <iframe
-                    src="https://maps.google.com/maps?q=Arena+Franca&z=16&output=embed"
-                    width="100%"
-                    height="300"
-                    style="border:0;"
-                    loading="lazy"
-                    title="Localização do evento: Arena Franca">
-                </iframe>
-            </div>
-
-            <div class="graficos-container">
-                <div>
-                    <h3>Selo de Garantia (Canvas 2D)</h3>
-                    <canvas id="seloEvento" width="200" height="200"></canvas>
+                <div class="card card-hover mb-4 shadow-sm">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <img src="images/show-rock.jpg" class="img-fluid rounded-start h-100 w-100 object-fit-cover" alt="Palco de show de rock com luzes">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <span class="badge text-bg-danger mb-2">Destaque</span>
+                                <h3 class="card-title h4">Show de Rock</h3>
+                                <p class="card-text text-body-secondary">07/11/2026, Arena Franca</p>
+                                <p class="fs-4 fw-bold text-primary">R$ 120,00</p>
+                                <a href="#" class="btn btn-primary">Comprar ingresso</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="grafico-svg">
-                    <h3>Ingresso Oficial (SVG)</h3>
-                    <svg width="120" height="120" viewBox="0 0 120 120">
-                        <rect x="10" y="30" width="100" height="60" rx="10" fill="#2a6bf2" />
-                        <circle cx="95" cy="30" r="15" fill="#f4d03f" />
-                        <text x="60" y="65" text-anchor="middle" fill="white" font-size="14" font-family="Arial">INGRESSO</text>
-                    </svg>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-4">
+                    <div class="col">
+                        <div class="card card-hover h-100 shadow-sm">
+                            <div class="ratio ratio-16x9">
+                                <img src="images/teatro.jpg" class="card-img-top object-fit-cover" alt="Cenário de teatro">
+                            </div>
+                            <div class="card-body">
+                                <span class="badge text-bg-secondary mb-2">Teatro</span>
+                                <h3 class="card-title h5">Teatro: A Comédia da Vida</h3>
+                                <p class="card-text text-body-secondary mb-0">14/11/2026, Teatro Municipal</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center bg-transparent">
+                                <span class="fw-bold text-primary">R$ 60,00</span>
+                                <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-hover h-100 shadow-sm">
+                            <div class="ratio ratio-16x9">
+                                <img src="images/gastronomia.jpg" class="card-img-top object-fit-cover" alt="Mesa de festival gastronômico">
+                            </div>
+                            <div class="card-body">
+                                <span class="badge text-bg-success mb-2">Gastronomia</span>
+                                <h3 class="card-title h5">Festival Gastronômico</h3>
+                                <p class="card-text text-body-secondary mb-0">21/11/2026, Praça Central</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center bg-transparent">
+                                <span class="fw-bold text-primary">Gratuito</span>
+                                <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-hover h-100 shadow-sm">
+                            <div class="ratio ratio-16x9">
+                                <img src="images/futebol.jpg" class="card-img-top object-fit-cover" alt="Torcida em estádio de futebol">
+                            </div>
+                            <div class="card-body">
+                                <span class="badge text-bg-warning mb-2">Esportes</span>
+                                <h3 class="card-title h5">Final do Campeonato Estadual</h3>
+                                <p class="card-text text-body-secondary mb-0">28/11/2026, Estádio Municipal</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center bg-transparent">
+                                <span class="fw-bold text-primary">R$ 40,00</span>
+                                <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-hover h-100 shadow-sm">
+                            <div class="ratio ratio-16x9">
+                                <img src="images/jazz.jpg" class="card-img-top object-fit-cover" alt="Músicos em noite de jazz">
+                            </div>
+                            <div class="card-body">
+                                <span class="badge text-bg-primary mb-2">Shows</span>
+                                <h3 class="card-title h5">Noite de Jazz</h3>
+                                <p class="card-text text-body-secondary mb-0">05/12/2026, Casa de Cultura</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center bg-transparent">
+                                <span class="fw-bold text-primary">R$ 75,00</span>
+                                <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-hover h-100 shadow-sm">
+                            <div class="ratio ratio-16x9">
+                                <img src="images/standup.jpg" class="card-img-top object-fit-cover" alt="Comediante no palco">
+                            </div>
+                            <div class="card-body">
+                                <span class="badge text-bg-info mb-2">Comédia</span>
+                                <h3 class="card-title h5">Stand-up Comedy</h3>
+                                <p class="card-text text-body-secondary mb-0">12/12/2026, Teatro Municipal</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center bg-transparent">
+                                <span class="fw-bold text-primary">R$ 90,00</span>
+                                <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </main>
+        </div>
+    </div>
 
-        <section id="vantagens">
-            <h2>Por que comprar conosco?</h2>
-            <ul>
-                <li>Compra 100% online e segura</li>
-                <li>Ingresso digital, sem filas</li>
-                <li>Reembolso garantido em caso de cancelamento</li>
-                <li>Suporte ao cliente todos os dias</li>
-            </ul>
-        </section>
-
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Dúvidas? Fale com a gente pelo e-mail <a href="mailto:contato@ingressosfacil.com">contato@ingressosfacil.com</a>.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 IngressosFácil - Todos os direitos reservados</p>
+    <footer id="contato" class="bg-dark text-light text-center py-3 mt-auto">
+        <small>&copy; 2026 IngressosFácil. Todos os direitos reservados.</small>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
 </body>
 </html>
