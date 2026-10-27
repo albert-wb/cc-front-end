@@ -22,10 +22,13 @@ Este repositório documenta e implementa passo a passo o conteúdo prático das 
 ├── exemplos/
 │   ├── aula-03/
 │   │   └── elementos-fundamentais.html  # Formatação, listas, tabelas olímpicas e links
-│   └── aula-07-agenda-salas/
-│       ├── index.html                   # Exemplo de protótipo de agenda de salas
-│       ├── login.html                   # Página de login do protótipo
-│       └── styles.css                   # Seletores de CSS e especificidade
+│   ├── aula-07-agenda-salas/
+│   │   ├── index.html                   # Exemplo de protótipo de agenda de salas
+│   │   ├── login.html                   # Página de login do protótipo
+│   │   └── styles.css                   # Seletores de CSS e especificidade
+│   └── exemplo-grid/
+│       ├── index.html                   # Estrutura completa de página com CSS Grid
+│       └── styles.css                   # Layout em grade bidimensional, áreas e auto-fit
 └── README.md                            # Documentação do projeto
 ```
 
@@ -40,3 +43,4 @@ Este repositório documenta e implementa passo a passo o conteúdo prático das 
 7. **Aula 08** - Estilização completa do IngressosFácil passo a passo (Reset, body, tipografia rem, links LVHA, listas, tabelas com zebra striping, cards com sombra, cabeçalho e rodapé).
 8. **Aula 09** - Recursos Multimídia (Vídeo e Áudio com player customizado, mapa incorporado via `<iframe>`) e Gráficos (Selo VIP em Canvas 2D e gráfico vetorial SVG).
 9. **Aula 10** - Layouts Responsivos com Flexbox, pseudo-classes (`:focus`, `:not`), pseudo-elementos (`::before`, `::after`), cabeçalho flexível, grade dinâmica de cards e rodapé fixado via coluna flex.
+10. **Aula 11** - CSS Grid Layout: estruturação bidimensional com grid-template-areas, vitrine de cards com auto-fit/minmax, controle de trilhas e responsividade.
