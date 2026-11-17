@@ -17,6 +17,7 @@ Este repositório documenta e implementa passo a passo o conteúdo prático das 
 │   ├── style.css                        # Folha de estilo básica inicial
 │   └── styles.css                       # Folha de estilo sincronizada com regras customizadas
 ├── js/
+│   ├── cadastro.js                      # Manipulação do DOM do formulário de cadastro (Aula 14)
 │   └── script.js                        # Controles de mídia (vídeo e áudio) e desenho em Canvas 2D
 ├── images/                              # Imagens dos eventos (show, teatro, gastronomia, futebol, etc.)
 ├── exemplos/
@@ -45,3 +46,4 @@ Este repositório documenta e implementa passo a passo o conteúdo prático das 
 9. **Aula 10** - Layouts Responsivos com Flexbox, pseudo-classes (`:focus`, `:not`), pseudo-elementos (`::before`, `::after`), cabeçalho flexível, grade dinâmica de cards e rodapé fixado via coluna flex.
 10. **Aula 11** - CSS Grid Layout: estruturação bidimensional com grid-template-areas, vitrine de cards com auto-fit/minmax, controle de trilhas e responsividade.
 11. **Aula 12** - Bootstrap 5: framework de estilos, sistema de 12 colunas, componentes pré-estilizados (navbar responsiva, cards com grid, list-group, forms com input-group) e classes utilitárias.
+12. **Aula 14** - Manipulação do DOM com JavaScript: captura do evento `submit` com `preventDefault()`, leitura e agrupamento dos dados do formulário em um objeto JavaScript, exibição de alerta verde dinâmico estilizado com Bootstrap na tela e limpeza automática dos campos com `form.reset()`.
